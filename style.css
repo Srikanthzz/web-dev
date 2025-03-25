@@ -1,0 +1,129 @@
+/* Base Styles (Desktop First) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+header {
+  background-color: #00aaff;
+  color: black;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.catchy {
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about, .attractions {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.attractions ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.attractions li {
+  background-color: #dff3fc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.attractions li:hover {
+  background-color: #bde7f6;
+  transform: scale(1.02);
+}
+
+.attractions img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+
+
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 100px;
+}
+
+/* Media Query: Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .catchy {
+    padding: 30px 10px;
+  }
+
+  .book-button {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .about, .attractions {
+    padding: 10px;
+  }
+
+  .attractions img {
+    width: 90%;
+    height: auto;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
